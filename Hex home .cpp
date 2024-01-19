@@ -26,7 +26,7 @@ int feeds;
 int time;
 if(feeds<=20)
 {
-  sendMessage("*256709492182","Hello this is Smart Bird home system/n the feeds are less of about %d Your please reminded to Reload");
+  sendMessage("+256709492182","Hello this is Smart Bird home system/n the feeds are less of about %d Your please reminded to Reload");
 }
 if(temp<=19)
 {
