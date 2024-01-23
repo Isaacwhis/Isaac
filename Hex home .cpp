@@ -2,6 +2,7 @@
 #include<TimeLib.h>
 int Motorfeeder=8;
 int heater=9 ;
+int cooler =6;
 int tempsensor = A0;
 int feedsensor =A1;
 SoftwareSerial gsmModule(0,1);
@@ -37,6 +38,17 @@ if(temp<=19)
 else
 {
     digitalWrite(heater,LOW);
+  delay(500);
+}
+if(temp>=21)
+{
+
+  digitalWrite(cooler,HIGH);
+  delay(5000);
+}
+else
+{
+    digitalWrite(cooler,LOW);
   delay(500);
 }
 if(hour()== 8 && minute()==0)
